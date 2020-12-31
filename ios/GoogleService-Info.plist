@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>198337076196-hp8lvu9sedcni7n5n0efu2184gscs7lk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.198337076196-hp8lvu9sedcni7n5n0efu2184gscs7lk</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>198337076196-cmihadga2m6gonoe05kg2seuji03ung7.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAnLz81PvLb5jxGftpHlhRMuUHZ9O8son8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>198337076196</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.igorming.openings</string>
+	<key>PROJECT_ID</key>
+	<string>chess-openings-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chess-openings-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:198337076196:ios:d1048da6a4a38b17aa85f1</string>
+	<key>DATABASE_URL</key>
+	<string>https://chess-openings-app.firebaseio.com</string>
+</dict>
+</plist>
