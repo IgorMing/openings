@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:openings/helper.dart';
+import 'package:openings/home.dart';
 
 void main() {
   runApp(App());
@@ -20,7 +21,7 @@ class App extends StatelessWidget {
             }
 
             if (snapshot.connectionState == ConnectionState.done) {
-              return Helper(msg: 'deu bom');
+              return Home();
             }
 
             return Helper(msg: 'tá carregando');
