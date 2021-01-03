@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:openings/helper.dart';
 import 'package:openings/home.dart';
 
@@ -12,7 +13,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     final Future<FirebaseApp> _init = Firebase.initializeApp();
 
-    return MaterialApp(
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       home: FutureBuilder(
           future: _init,
           builder: (context, snapshot) {
