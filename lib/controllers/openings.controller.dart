@@ -1,20 +1,19 @@
-import 'package:firebase_database/firebase_database.dart';
 import 'package:get/get.dart';
-import 'package:openings/models/opening.model.dart';
+import 'package:openings/services/openings.service.dart';
 
 class OpeningsController extends GetxController {
   final data = RxList<dynamic>([]);
   int get length => data.length;
+  OpeningsDataFetcher fetcher;
+
+  OpeningsController(OpeningsDataFetcher fetcher) {
+    this.fetcher = fetcher;
+  }
 
   @override
   void onInit() {
     try {
-      DatabaseReference openings = FirebaseDatabase.instance.reference().root();
-      openings.once().then((snapshot) {
-        snapshot.value.forEach((_, v) {
-          data.add(v);
-        });
-      });
+      this.fetcher.fetch().then((list) => list.forEach((v) => data.add(v)));
     } catch (err) {}
     super.onInit();
   }
