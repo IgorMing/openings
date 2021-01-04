@@ -12,6 +12,9 @@ class Home extends StatelessWidget {
         Get.put(OpeningsController(FirebaseOpeningsDataFetcher()));
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Openings'),
+      ),
       body: SafeArea(
           child: Obx(
         () => ListView.builder(
