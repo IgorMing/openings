@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:openings/configs/theme.dart';
 import 'package:openings/helper.dart';
-import 'package:openings/home.dart';
+import 'package:openings/screens/home.dart';
 
 void main() {
   runApp(App());
