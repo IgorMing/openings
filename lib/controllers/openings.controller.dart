@@ -1,8 +1,9 @@
 import 'package:get/get.dart';
+import 'package:openings/models/opening.model.dart';
 import 'package:openings/services/openings.service.dart';
 
 class OpeningsController extends GetxController {
-  final data = RxList<dynamic>([]);
+  final data = RxList<OpeningModel>([]);
   int get length => data.length;
   OpeningsDataFetcher fetcher;
 

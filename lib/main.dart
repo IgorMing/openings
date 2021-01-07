@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:openings/configs/theme.dart';
 import 'package:openings/helper.dart';
 import 'package:openings/home.dart';
 
@@ -15,12 +16,7 @@ class App extends StatelessWidget {
 
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Color(0xff21222b),
-        primaryColorLight: Color(0xff52575d),
-        accentColor: Color(0xfffddb3a),
-        brightness: Brightness.dark,
-      ),
+      theme: AppTheme().getTheme,
       home: FutureBuilder(
           future: _init,
           builder: (context, snapshot) {
